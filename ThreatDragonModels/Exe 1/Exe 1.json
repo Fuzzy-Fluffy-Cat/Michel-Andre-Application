@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "614fd801-138d-47cb-ae2f-3ae31e77654a",
             "zIndex": 1,
+            "id": "614fd801-138d-47cb-ae2f-3ae31e77654a",
             "data": {
               "type": "tm.Actor",
               "name": "Administrator\nWeb Browser",
@@ -72,8 +72,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "ca3afa1b-956b-41cf-b74a-f3593a147038",
             "zIndex": 2,
+            "id": "ca3afa1b-956b-41cf-b74a-f3593a147038",
             "data": {
               "type": "tm.Process",
               "name": "Web\nApplication",
@@ -120,6 +120,9 @@
               "threats": []
             },
             "id": "e4bd28e3-e947-4dd3-8085-87c01cc5eafc",
+            "labels": [
+              "Admin fills up registration form"
+            ],
             "source": {
               "cell": "614fd801-138d-47cb-ae2f-3ae31e77654a"
             },
@@ -131,9 +134,6 @@
                 "x": 300,
                 "y": 100
               }
-            ],
-            "labels": [
-              "Admin fills up registration form"
             ]
           },
           {
@@ -168,6 +168,9 @@
               "threats": []
             },
             "id": "c2900c8d-3ed9-42ee-ad4d-0216d5e773d8",
+            "labels": [
+              "Response"
+            ],
             "source": {
               "cell": "ca3afa1b-956b-41cf-b74a-f3593a147038"
             },
@@ -180,9 +183,6 @@
                 "x": 300,
                 "y": 150
               }
-            ],
-            "labels": [
-              "Response"
             ]
           },
           {
@@ -217,6 +217,9 @@
               "threats": []
             },
             "id": "43c384af-8dc3-4c39-8197-8f2424857a47",
+            "labels": [
+              "Uploads .csv file"
+            ],
             "source": {
               "cell": "614fd801-138d-47cb-ae2f-3ae31e77654a"
             },
@@ -228,9 +231,6 @@
                 "x": 300,
                 "y": 200
               }
-            ],
-            "labels": [
-              "Uploads .csv file"
             ]
           },
           {
@@ -265,6 +265,9 @@
               "threats": []
             },
             "id": "5777629d-522b-413b-8350-d2fa43df62dc",
+            "labels": [
+              "Response"
+            ],
             "source": {
               "cell": "ca3afa1b-956b-41cf-b74a-f3593a147038"
             },
@@ -276,9 +279,6 @@
                 "x": 290,
                 "y": 250
               }
-            ],
-            "labels": [
-              "Response"
             ]
           },
           {
@@ -313,6 +313,9 @@
               "threats": []
             },
             "id": "5e6b266b-49aa-4a57-bb4a-02b26d52e3b0",
+            "labels": [
+              "writes candidate(s) information"
+            ],
             "source": {
               "cell": "ca3afa1b-956b-41cf-b74a-f3593a147038"
             },
@@ -324,9 +327,6 @@
                 "x": 600,
                 "y": 130
               }
-            ],
-            "labels": [
-              "writes candidate(s) information"
             ]
           },
           {
@@ -361,6 +361,9 @@
               "threats": []
             },
             "id": "b2914b7d-5c2f-47fc-b0cf-c77bc95b5d87",
+            "labels": [
+              "Success = 1"
+            ],
             "source": {
               "cell": "93f6c0e3-2532-4740-a7c5-95485621b917"
             },
@@ -372,10 +375,59 @@
                 "x": 600,
                 "y": 200
               }
-            ],
-            "labels": [
-              "Success = 1"
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "1c376703-74ac-4509-96a1-174921dc197f",
+            "source": {
+              "x": 740,
+              "y": 100
+            },
+            "target": {
+              "x": 740,
+              "y": 260
+            },
+            "vertices": [
+              {
+                "x": 720,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "c3918ade-fd63-4617-9655-e61c364441b7",
+            "source": {
+              "x": 370,
+              "y": 120
+            },
+            "target": {
+              "x": 370,
+              "y": 260
+            }
           },
           {
             "position": {
@@ -401,8 +453,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "93f6c0e3-2532-4740-a7c5-95485621b917",
             "zIndex": 11,
+            "id": "93f6c0e3-2532-4740-a7c5-95485621b917",
             "data": {
               "type": "tm.Store",
               "name": "Student Voter Information",
